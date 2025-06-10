@@ -8,6 +8,7 @@ Proyecto completo de gestión para una residencia de ancianos, compuesto por un 
   - [Índice](#índice)
   - [Creación de la base de datos](#creación-de-la-base-de-datos)
   - [Instalación del backend](#instalación-del-backend)
+  - [Configuración del archivo .env](#configuración-del-archivo-env)
   - [Puesta en marcha del backend](#puesta-en-marcha-del-backend)
   - [Instalación del frontend](#instalación-del-frontend)
   - [Puesta en marcha del frontend](#puesta-en-marcha-del-frontend)
@@ -76,6 +77,27 @@ Proyecto completo de gestión para una residencia de ancianos, compuesto por un 
    Asegúrate de que los datos de conexión estén correctamente configurados (host, usuario, contraseña, nombre de la base de datos).
 
 ---
+## Configuración del archivo .env
+
+Crea un archivo llamado `.env` en la ruta `residencia-api/residencia-api` con el siguiente contenido:
+
+```env
+DB_HOST=localhost
+DB_USER=usuario
+DB_PASSWORD=contraseña
+DB_NAME=nombre_basedatos
+PORT=3000
+JWT_SECRET=clave_secreta
+
+EMAIL_PROVIDER=ethereal
+SMTP_HOST=smtp.ethereal.email
+SMTP_PORT=587
+SMTP_USER=correo@ethereal.email
+SMTP_PASS=contraseña
+```
+
+Este archivo es necesario para el correcto funcionamiento del backend y **no está incluido en el repositorio** por motivos de seguridad.
+
 
 ## Puesta en marcha del backend
 
